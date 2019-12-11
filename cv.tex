@@ -1,0 +1,168 @@
+% LaTeX Curriculum Vitae Template
+%
+% Copyright (C) 2004-2009 Jason Blevins <jrblevin@sdf.lonestar.org>
+% http://jblevins.org/projects/cv-template/
+%
+% You may use use this document as a template to create your own CV
+% and you may redistribute the source code freely. No attribution is
+% required in any resulting documents. I do ask that you please leave
+% this notice and the above URL in the source code if you choose to
+% redistribute this file.
+
+\documentclass[letterpaper]{article}
+
+\usepackage{hyperref}
+\usepackage{geometry}
+\usepackage{xspace}
+\usepackage[utf8x]{inputenc}
+
+% Comment the following lines to use the default Computer Modern font
+% instead of the Palatino font provided by the mathpazo package.
+% Remove the 'osf' bit if you don't like the old style figures.
+\usepackage[T1]{fontenc}
+\usepackage[sc,osf]{mathpazo}
+\usepackage{amsmath}
+
+\def\name{Merlin Rabens}
+\def\footerlink{https://github.com/bluedigits/cv/blob/master/cv.pdf}
+
+% PDF metadata
+\hypersetup{
+  colorlinks = true,
+  urlcolor = black,
+  pdfauthor = {\name},
+  pdfkeywords = {software development, site reliability, algorithms, computer science},
+  pdftitle = {\name: Curriculum Vitae},
+  pdfsubject = {Curriculum Vitae},
+  pdfpagemode = UseNone
+}
+
+\geometry{
+  body={6.5in, 8.5in},
+  left=1.0in,
+  top=1.25in
+}
+
+% Page headers
+\pagestyle{myheadings}
+\markright{\name}
+\thispagestyle{empty}
+
+% Custom section fonts
+\usepackage{sectsty}
+\sectionfont{\rmfamily\mdseries\Large}
+\subsectionfont{\rmfamily\mdseries\itshape\large}
+
+% Don't indent paragraphs.
+\setlength\parindent{0em}
+
+% Make lists without bullets
+\renewenvironment{itemize}{
+  \begin{list}{}{
+    \setlength{\leftmargin}{1.5em}
+  }
+}{
+  \end{list}
+}
+
+\newenvironment{no-indent-itemize}{
+  \begin{list}{}{
+    \setlength{\leftmargin}{0em}
+  }
+}{
+  \end{list}
+}
+
+\def\tilde{$\scriptstyle\sim$}
+\def\bullet{$\circ$\xspace}
+
+\begin{document}
+
+{\huge \name}
+
+\bigskip
+\begin{minipage}{0.45\linewidth}
+  \begin{tabular}{llll}
+    Mobile: & On request
+      & Github: &\href{http://github.com/bluedigits}{\tt http://github.com/bluedigits}\\
+    Email: & \href{mailto:m.rabens@hotmail.de}{\tt m.rabens@hotmail.de} \\
+    Languages: & \textsc{en}, \textsc{de}
+  \end{tabular}
+\end{minipage}
+
+\bigskip
+\textsc{Keywords}: 
+Scala, SBT, Java, Spring, Maven, AWS, Akka Cluster, Apache Kafka, Apache Solr, Docker, Kubernetes, NoSQL, Microservices, Linux.
+
+\section*{Employment}
+\begin{no-indent-itemize}
+  \item \textsc{letgo}, Barcelona, Scala Backend Engineer, Jul 2018--present.
+  \begin{itemize}
+    \item\bullet Build user retention by working on campaign and notification backend services.
+    \item\bullet Developed and maintained distributed chat systems for letgo's classified market apps.
+    \item\bullet Developed search systems for letgo's own product catalog.
+  \end{itemize}
+  \item \textsc{Syniverse Technologies Messaging GmbH}, Würzburg, Software Engineer, October 2015--present.
+  \begin{itemize}
+    \item\bullet Developed and maintained software for intelligent message processing and routing.
+    \item\bullet Built up and maintained a CI environment.
+    \item\bullet Extended and maintained a K8s-based production-like test environment.
+    \item\bullet Built, managed, and deployed software releases.
+    \item\bullet General developer work in Scala and Java, from requirements to delivery.
+  \end{itemize}
+  \item \textsc{Vogel Druck und Medienservice GmbH}, Höchberg, Senior Software Developer, Nov 2013--Sep 2015.
+  \begin{itemize}
+    \item\bullet Developed and maintained software for product information management.
+    \item\bullet Developed an individual web solution for publication planning of catalogues and brochures.
+  \end{itemize}
+  \item \textsc{fidelis HR GmbH}, Würzburg, Software Developer, Jul 2011--Oct 2013. 
+  \begin{itemize}
+    \item\bullet Developed and maintained software for payroll accounting.
+  \end{itemize}
+  \item \textsc{Trinodis GmbH}, Würzburg, Software Developer, Apr 2011--Jun 2011. 
+  \begin{itemize}
+    \item\bullet Developed and maintained web-based software for goods management.
+  \end{itemize}
+  \item \textsc{DialogData GmbH \& Co. KG}, Munich, Software Developer, Jul 2010--Mar 2011.
+  \begin{itemize}
+	\item\bullet Implemented requirements for a globally integrated production control system.
+	\item\bullet Prototyped and responsible for architecture of an address broker webservice.
+	\item\bullet Developed a comprehensive user interface to bring all products under the same roof.
+	\item\bullet Integrated key component together with a Spanish engineering team on site.
+    \item\bullet Collaborated with UX and product teams to assess requirements.
+  \end{itemize}
+    \item \textsc{AuDaCon AG}, Weikersheim, Application Developer, Sep 2009--Jun 2010.
+  \begin{itemize}
+    \item\bullet Developed an efficient online processing platform for transparent cost control of leasing vehicles.
+    \item\bullet Integrated electronic approval processes according to individual specifications of leasing companies.
+  \end{itemize}
+    \item \textsc{Ancud IT-Beratung GmbH}, Nuremberg, Software Developer, Nov 2007--Jun 2009.
+  \begin{itemize}
+    \item\bullet Implemented requirements for a complete ship monitoring system.
+    \item\bullet Developed and designed an uniform land portal and adapted portals for shipowners.
+    \item\bullet Developed a portlet for displaying ship routes, current ship positions, and signal strengths.
+    \item\bullet Implemented a traffic quota system for ship's crew members.
+    \item\bullet Developed a remote control portlet to telecommand ship's PCs.
+  \end{itemize}
+\end{no-indent-itemize}
+
+\section*{Education}
+\begin{no-indent-itemize}
+  \item Computer Science Expert Subject Area: Software Development, IHK, 2004--Jul 2007
+\end{no-indent-itemize}
+
+\section*{Continuous Learning and Certifications}
+\begin{no-indent-itemize}
+  \item Functional Programming Principles in Scala by EPFL on Coursera 
+        (\href{http://tinyurl.com/y4fmkg8s}{http://tinyurl.com/y4fmkg8s}), score~100\%
+\end{no-indent-itemize}
+
+\bigskip
+\begin{center}
+  \begin{footnotesize}
+    Last updated: \today \\
+    \href{\footerlink}{\texttt{\footerlink}}
+  \end{footnotesize}
+\end{center}
+
+\end{document}
