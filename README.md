@@ -1,4 +1,5 @@
-# Build
-Use pdflatex from tex live, not the macport version
+# My Resume
 
-    pdflatex cv.tex
+Here, you'll find my (hopefully) always-updated version of my CV.
+
+[Click here to see my CV](../blob/master/cv.pdf)
